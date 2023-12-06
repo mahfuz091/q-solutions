@@ -1,328 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Q-SOLUTIONS – Software development for finance and management</title>
-    <link rel="icon" type="image/svg" href="assets/images/favicon.svg" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,300;7..72,400;7..72,500;7..72,600;7..72,700;7..72,800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- plugins css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- template css -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
 
-  <body>
-    <div class="page-wrapper">
-      <header class="main-header">
-        <nav class="main-menu sticky-header main-menu--three">
-          <div class="container">
-            <a href="index.html" class="main-header__logo">
-              <img src="assets/images/logo-dark.png" alt="" />
-            </a>
-            <ul class="main-menu__list">
-              <li>
-                <a href="">Our Solutions</a>
-              </li>
-              <li>
-                <a href="">solutions</a>
-              </li>
-              <li>
-                <a href="">Contact Us</a>
-              </li>
-            </ul>
-            <a
-              class="navbar-toggler"
-              data-bs-toggle="offcanvas"
-              href="#offcanvasExample"
-              role="button"
-              aria-controls="offcanvasExample"
-            >
-              <span>
-                <svg
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="48" height="48" rx="8" fill="#D4A61F"></rect>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M35.1992 16.0004C35.1992 15.576 35.0306 15.1691 34.7306 14.869C34.4305 14.569 34.0236 14.4004 33.5992 14.4004H14.3992C13.9749 14.4004 13.5679 14.569 13.2679 14.869C12.9679 15.1691 12.7992 15.576 12.7992 16.0004C12.7992 16.4247 12.9679 16.8317 13.2679 17.1318C13.5679 17.4318 13.9749 17.6004 14.3992 17.6004H33.5992C34.0236 17.6004 34.4305 17.4318 34.7306 17.1318C35.0306 16.8317 35.1992 16.4247 35.1992 16.0004ZM35.1992 24.0004C35.1992 23.576 35.0306 23.1691 34.7306 22.869C34.4305 22.569 34.0236 22.4004 33.5992 22.4004H23.9992C23.5749 22.4004 23.1679 22.569 22.8679 22.869C22.5679 23.1691 22.3992 23.576 22.3992 24.0004C22.3992 24.4247 22.5679 24.8318 22.8679 25.1318C23.1679 25.4318 23.5749 25.6004 23.9992 25.6004H33.5992C34.0236 25.6004 34.4305 25.4318 34.7306 25.1318C35.0306 24.8318 35.1992 24.4247 35.1992 24.0004ZM35.1992 32.0004C35.1992 31.5761 35.0306 31.169 34.7306 30.869C34.4305 30.569 34.0236 30.4004 33.5992 30.4004H14.3992C13.9749 30.4004 13.5679 30.569 13.2679 30.869C12.9679 31.169 12.7992 31.5761 12.7992 32.0004C12.7992 32.4247 12.9679 32.8318 13.2679 33.1318C13.5679 33.4318 13.9749 33.6004 14.3992 33.6004H33.5992C34.0236 33.6004 34.4305 33.4318 34.7306 33.1318C35.0306 32.8318 35.1992 32.4247 35.1992 32.0004Z"
-                    fill="white"
-                  ></path>
-                </svg>
-                <!-- <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                >
-                  <path
-                    d="M7.33333 33H36.6667C37.675 33 38.5 32.175 38.5 31.1667C38.5 30.1583 37.675 29.3333 36.6667 29.3333H7.33333C6.325 29.3333 5.5 30.1583 5.5 31.1667C5.5 32.175 6.325 33 7.33333 33ZM7.33333 23.8333H36.6667C37.675 23.8333 38.5 23.0083 38.5 22C38.5 20.9917 37.675 20.1667 36.6667 20.1667H7.33333C6.325 20.1667 5.5 20.9917 5.5 22C5.5 23.0083 6.325 23.8333 7.33333 23.8333ZM5.5 12.8333C5.5 13.8417 6.325 14.6667 7.33333 14.6667H36.6667C37.675 14.6667 38.5 13.8417 38.5 12.8333C38.5 11.825 37.675 11 36.6667 11H7.33333C6.325 11 5.5 11.825 5.5 12.8333Z"
-                    fill="white"
-                  />
-                </svg> -->
-              </span>
-            </a>
-          </div>
-        </nav>
-        <div
-          class="offcanvas offcanvas-start"
-          tabindex="-1"
-          id="offcanvasExample"
-          aria-labelledby="offcanvasExampleLabel"
-        >
-          <div class="offcanvas-header">
-            <a href="index.html" class="main-header__logo">
-              <img src="assets/images/logo-dark.png" alt="" />
-            </a>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="mobile-menu__list">
-              <li>
-                <a href="">Our Solutions</a>
-              </li>
-              <li>
-                <a href="">solutions</a>
-              </li>
-              <li>
-                <a href="">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <section class="banner">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Q-SOLUTIONS – Software development for finance and management</title>
+  <link rel="icon" type="image/svg" href="assets/images/favicon.svg" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,300;7..72,400;7..72,500;7..72,600;7..72,700;7..72,800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- plugins css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- template css -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="main-header">
+      <nav class="main-menu sticky-header main-menu--three">
         <div class="container">
-          <h2 class="banner-title">
-            Software development for finance and management
-          </h2>
-          <p class="banner-desc">
-            Technology and solutions that drive business growth.
-          </p>
-          <div class="text-end">
-            <a href="" class="thm-btn">Contact Us</a>
-          </div>
+          <a href="index.html" class="main-header__logo">
+            <img src="assets/images/logo-dark.png" alt="" />
+          </a>
+          <ul class="main-menu__list">
+            <li>
+              <a href="">Our Solutions</a>
+            </li>
+            <li>
+              <a href="">solutions</a>
+            </li>
+            <li>
+              <a href="">Contact Us</a>
+            </li>
+          </ul>
+          <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            <span>
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" rx="8" fill="#D4A61F"></rect>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M35.1992 16.0004C35.1992 15.576 35.0306 15.1691 34.7306 14.869C34.4305 14.569 34.0236 14.4004 33.5992 14.4004H14.3992C13.9749 14.4004 13.5679 14.569 13.2679 14.869C12.9679 15.1691 12.7992 15.576 12.7992 16.0004C12.7992 16.4247 12.9679 16.8317 13.2679 17.1318C13.5679 17.4318 13.9749 17.6004 14.3992 17.6004H33.5992C34.0236 17.6004 34.4305 17.4318 34.7306 17.1318C35.0306 16.8317 35.1992 16.4247 35.1992 16.0004ZM35.1992 24.0004C35.1992 23.576 35.0306 23.1691 34.7306 22.869C34.4305 22.569 34.0236 22.4004 33.5992 22.4004H23.9992C23.5749 22.4004 23.1679 22.569 22.8679 22.869C22.5679 23.1691 22.3992 23.576 22.3992 24.0004C22.3992 24.4247 22.5679 24.8318 22.8679 25.1318C23.1679 25.4318 23.5749 25.6004 23.9992 25.6004H33.5992C34.0236 25.6004 34.4305 25.4318 34.7306 25.1318C35.0306 24.8318 35.1992 24.4247 35.1992 24.0004ZM35.1992 32.0004C35.1992 31.5761 35.0306 31.169 34.7306 30.869C34.4305 30.569 34.0236 30.4004 33.5992 30.4004H14.3992C13.9749 30.4004 13.5679 30.569 13.2679 30.869C12.9679 31.169 12.7992 31.5761 12.7992 32.0004C12.7992 32.4247 12.9679 32.8318 13.2679 33.1318C13.5679 33.4318 13.9749 33.6004 14.3992 33.6004H33.5992C34.0236 33.6004 34.4305 33.4318 34.7306 33.1318C35.0306 32.8318 35.1992 32.4247 35.1992 32.0004Z"
+                  fill="white"></path>
+              </svg>
+
+            </span>
+          </a>
         </div>
-      </section>
-      <section class="solutions">
-        <div class="container">
-          <h2 class="title">
-            Secure and reliable finance & management solutions
-          </h2>
-          <div class="solutions-cards">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="solutions-card text-center">
-                  <div class="card-img">
-                    <img src="assets/images/service-1.png" alt="" />
-                  </div>
-                  <h4>Research</h4>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="solutions-card text-center">
-                  <div class="card-img">
-                    <img src="assets/images/service-2.png" alt="" />
-                  </div>
-                  <h4>Development</h4>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="solutions-card text-center">
-                  <div class="card-img">
-                    <img src="assets/images/service-3.png" alt="" />
-                  </div>
-                  <h4>Implementation</h4>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="solutions-card text-center">
-                  <div class="card-img">
-                    <img src="assets/images/service-4.png" alt="" />
-                  </div>
-                  <h4>Automation</h4>
-                </div>
-              </div>
-            </div>
-          </div>
+      </nav>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <a href="index.html" class="main-header__logo">
+            <img src="assets/images/logo-dark.png" alt="" />
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-      </section>
-      <section class="main-img">
-        <img src="assets/images/main-img.png" alt="" srcset="" />
-      </section>
-      <section class="services">
-        <div class="container">
-          <h4>
-            Empower your business with our services, tailored to meet your needs
-            and exceed your expectations
-          </h4>
-          <div class="row tax">
-            <div class="col-lg-6">
-              <h4>Software integration with Tax Authorities</h4>
-              <p>
-                Q-Solutions enables a direct integration of your software with
-                the Tax Authority, facilitating seamless filing of declarations
-                and iDeal payments for wage taxes and value-added tax. Elevate
-                your software to a higher standard through the automatic
-                linkage, ensuring a smooth translation of data from your system
-                to accurate tax declarations and iDeal payments. Q-Solutions
-                possesses the expertise and experience to meticulously manage
-                this integration with the Tax Authority on your behalf.
-              </p>
-            </div>
-            <div class="col-lg-6">
-              <div class="service-card__img tax">
-                <img src="assets/images/tax.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="row bank">
-            <div class="col-lg-6">
-              <div class="service-card__img bank">
-                <img src="assets/images/bank.png" alt="" />
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <h4>
-                Automatic connection between your bank, software and systems
-              </h4>
-              <p>
-                Q-Solutions facilitates seamless integration of your bank
-                account with various software applications, including websites,
-                ERP systems, accounting software, and property management. This
-                automation streamlines critical business processes such as
-                accounting, invoice reconciliation, and payments. Your software
-                gains secure access to financial data, enabling it to receive
-                and initiate payments while generating associated documentation,
-                including PDFs.
-              </p>
-            </div>
-          </div>
-          <div class="row payment">
-            <div class="col-lg-6">
-              <h4>Online Payment System Integration</h4>
-              <p>
-                Enhance your software, webshop, or mobile app with integrated
-                online payment systems, smart invoicing, and service emails.
-                Q-Solutions selects the most ideal payment provider and
-                integrates it into your system, ensuring that payments and
-                associated sales invoices and emails are processed and sent
-                automatically. Additionally, payment requests can be handled and
-                seamlessly integrated into the accounting system.
-              </p>
-            </div>
-            <div class="col-lg-6">
-              <div class="service-card__img payment">
-                <img src="assets/images/payment.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="row ai">
-            <div class="col-lg-6">
-              <div class="service-card__img ai">
-                <img src="assets/images/ai.png" alt="" />
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <h4>Implementation of AI-Powered OCR software</h4>
-              <p>
-                Transform your business with AI-Powered OCR software that
-                seamlessly extracts and processes information from various
-                documents, ensuring swift and accurate data handling. AI-powered
-                OCR transforms captured data into searchable, exportable, and
-                machinereadable text, enabling advanced analysis through machine
-                learning and deep learning. Embrace AI to innovate, streamline
-                operations, and stay ahead in a dynamic digital landscape.
-              </p>
-            </div>
-          </div>
+        <div class="offcanvas-body">
+          <ul class="mobile-menu__list">
+            <li>
+              <a href="">Our Solutions</a>
+            </li>
+            <li>
+              <a href="">solutions</a>
+            </li>
+            <li>
+              <a href="">Contact Us</a>
+            </li>
+          </ul>
         </div>
-      </section>
-      <section class="vision">
-        <div class="container">
-          <h4>
-            With a clear vision and the conviction that the impossible is
-            possible, we always look beyond standard perspectives. We think big,
-            constantly innovate, and view every challenge as a unique
-            opportunity to excel.
-          </h4>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="container">
+        <h2 class="banner-title">
+          Software development for finance and management
+        </h2>
+        <p class="banner-desc">
+          Technology and solutions that drive business growth.
+        </p>
+        <div class="text-end">
+          <a href="" class="thm-btn">Contact Us</a>
         </div>
-      </section>
-      <section class="solution">
-        <div class="container">
-          <h4>Our Solutions</h4>
+      </div>
+    </section>
+    <section class="solutions">
+      <div class="container">
+        <h2 class="title">
+          Secure and reliable finance & management solutions
+        </h2>
+        <div class="solutions-cards">
           <div class="row">
-            <div class="col-lg-6">
-              <div class="solution-card one">
-                <div class="card-img one">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/solution-1.png"
-                    alt=""
-                  />
+            <div class="col-lg-3">
+              <div class="solutions-card text-center">
+                <div class="card-img">
+                  <img src="assets/images/service-1.png" alt="" />
                 </div>
-                <p>
-                  Q-Administratie is your one-stop digital solution, providing
-                  Arabic-speaking entrepreneurs and NL-based companies with
-                  comprehensive, efficient, and fully digital services in
-                  accounting, management, and legal support.
-                </p>
-                <a href="#" class="thm-btn">Discover More</a>
+                <h4>Research</h4>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="solution-card two">
-                <div class="card-img two">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/solution-2.png"
-                    alt=""
-                  />
+            <div class="col-lg-3">
+              <div class="solutions-card text-center">
+                <div class="card-img">
+                  <img src="assets/images/service-2.png" alt="" />
                 </div>
-                <p>
-                  Optimize your accounting or bookkeeping firm with our
-                  comprehensive software, featuring proprietary email services
-                  and payment systems. Streamline and automate invoicing,
-                  accounting, reporting, and more within a unified platform,
-                  supported by our intelligent software and a mobile app for
-                  high-end customer service.
-                </p>
-                <a href="#" class="thm-btn">Discover More</a>
+                <h4>Development</h4>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="solutions-card text-center">
+                <div class="card-img">
+                  <img src="assets/images/service-3.png" alt="" />
+                </div>
+                <h4>Implementation</h4>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="solutions-card text-center">
+                <div class="card-img">
+                  <img src="assets/images/service-4.png" alt="" />
+                </div>
+                <h4>Automation</h4>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="main-img">
+      <img src="assets/images/main-img.png" alt="" srcset="" />
+    </section>
+    <section class="services">
+      <div class="container">
+        <h4>
+          Empower your business with our services, tailored to meet your needs
+          and exceed your expectations
+        </h4>
+        <div class="row tax">
+          <div class="col-lg-6">
+            <h4>Software integration with Tax Authorities</h4>
+            <p>
+              Q-Solutions enables a direct integration of your software with
+              the Tax Authority, facilitating seamless filing of declarations
+              and iDeal payments for wage taxes and value-added tax. Elevate
+              your software to a higher standard through the automatic
+              linkage, ensuring a smooth translation of data from your system
+              to accurate tax declarations and iDeal payments. Q-Solutions
+              possesses the expertise and experience to meticulously manage
+              this integration with the Tax Authority on your behalf.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-card__img tax">
+              <img src="assets/images/tax.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row bank">
+          <div class="col-lg-6">
+            <div class="service-card__img bank">
+              <img src="assets/images/bank.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h4>
+              Automatic connection between your bank, software and systems
+            </h4>
+            <p>
+              Q-Solutions facilitates seamless integration of your bank
+              account with various software applications, including websites,
+              ERP systems, accounting software, and property management. This
+              automation streamlines critical business processes such as
+              accounting, invoice reconciliation, and payments. Your software
+              gains secure access to financial data, enabling it to receive
+              and initiate payments while generating associated documentation,
+              including PDFs.
+            </p>
+          </div>
+        </div>
+        <div class="row payment">
+          <div class="col-lg-6">
+            <h4>Online Payment System Integration</h4>
+            <p>
+              Enhance your software, webshop, or mobile app with integrated
+              online payment systems, smart invoicing, and service emails.
+              Q-Solutions selects the most ideal payment provider and
+              integrates it into your system, ensuring that payments and
+              associated sales invoices and emails are processed and sent
+              automatically. Additionally, payment requests can be handled and
+              seamlessly integrated into the accounting system.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-card__img payment">
+              <img src="assets/images/payment.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row ai">
+          <div class="col-lg-6">
+            <div class="service-card__img ai">
+              <img src="assets/images/ai.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h4>Implementation of AI-Powered OCR software</h4>
+            <p>
+              Transform your business with AI-Powered OCR software that
+              seamlessly extracts and processes information from various
+              documents, ensuring swift and accurate data handling. AI-powered
+              OCR transforms captured data into searchable, exportable, and
+              machinereadable text, enabling advanced analysis through machine
+              learning and deep learning. Embrace AI to innovate, streamline
+              operations, and stay ahead in a dynamic digital landscape.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vision">
+      <div class="container">
+        <h4>
+          With a clear vision and the conviction that the impossible is
+          possible, we always look beyond standard perspectives. We think big,
+          constantly innovate, and view every challenge as a unique
+          opportunity to excel.
+        </h4>
+      </div>
+    </section>
+    <section class="solution">
+      <div class="container">
+        <h4>Our Solutions</h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="solution-card one">
+              <div class="card-img one">
+                <img class="img-fluid" src="assets/images/solution-1.png" alt="" />
+              </div>
+              <p>
+                Q-Administratie is your one-stop digital solution, providing
+                Arabic-speaking entrepreneurs and NL-based companies with
+                comprehensive, efficient, and fully digital services in
+                accounting, management, and legal support.
+              </p>
+              <a href="#" class="thm-btn">Discover More</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="solution-card two">
+              <div class="card-img two">
+                <img class="img-fluid" src="assets/images/solution-2.png" alt="" />
+              </div>
+              <p>
+                Optimize your accounting or bookkeeping firm with our
+                comprehensive software, featuring proprietary email services
+                and payment systems. Streamline and automate invoicing,
+                accounting, reporting, and more within a unified platform,
+                supported by our intelligent software and a mobile app for
+                high-end customer service.
+              </p>
+              <a href="#" class="thm-btn">Discover More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-choose">
+      <div class="container">
+        <h4>Why customers choose
+          Q-Solutions</h4>
+        <div class="choose-cards">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="choose-card one">
+                <div class="card-img">
+                  <img src="assets/images/Group 1413371327.png" alt="">
+                </div>
+                <h6>Be in control</h6>
+                <p>Services and solutions that streamline processes and maximize productivity</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="choose-card two">
+                <div class="card-img">
+                  <img src="assets/images/Group 1413371327 (1).png" alt="">
+                </div>
+                <h6>Opportunities &
+                  Possibilities</h6>
+                <p>Push boundaries with a fresh outlook and new perspectives</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="choose-card three">
+                <div class="card-img">
+                  <img src="assets/images/Group 1413371327 (3).png" alt="">
+                </div>
+                <h6>Innovation</h6>
+                <p>Invest in the future with smart software and tech solutions</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="choose-card four">
+                <div class="card-img">
+                  <img src="assets/images/Group 1413371327 (2).png" alt="">
+                </div>
+                <h6>Reliable partner</h6>
+                <p>Count on the expertise and experience of Q-Solutions and collaborate for innovation and growth.</p>
+              </div>
+            </div>
 
-    <script src="assets/js/main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <img src="assets/images/logo-light.png" alt="">
+            <p>Software development for finance and management</p>
+            <div class="social-icons">
+              <a href="">
+                <div class="social">
+                  <img src="assets/images/Facebook (1).png" alt="">
+                </div>
+              </a>
+              <a href="">
+                <div class="social">
+                  <img src="assets/images/fi_739244.svg" alt="">
+                </div>
+              </a>
+              <a href="">
+                <div class="social">
+                  <img src="assets/images/fi_733635.svg" alt="" srcset="">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h6>Information</h6>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Solutions</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h6>Get In Touch</h6>
+            <ul>
+              <li><a href="#"><img src="assets/images/Location.png" alt=""> 2118 Thornridge Cir. Syracuse, Connecticut
+                  35624</a>
+              </li>
+              <li><a href="#"><img src="assets/images/Phone.png" alt=""> (225) 555-0118</a></li>
+              <li><a href="#"> <img src="assets/images/Email.png" alt=""> kenzi.lawson@example.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
