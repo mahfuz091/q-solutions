@@ -718,23 +718,22 @@ a:active {
 /* contact */
 .contact .container {
   padding: 77px 71px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 40px;
   background: #fff;
   position: relative;
   margin-top: -127px;
+  text-align: center;
 }
 
 .contact h4 {
   color: #152452;
-  font-family: Literata 12pt;
-  font-size: 42px;
+  font-family: Literata;
+  font-size: 26px;
   font-style: normal;
   font-weight: 300;
-  line-height: 52px;
-  margin-bottom: 26px;
+  text-align: center;
+
+  margin-bottom: 10px;
 }
 
 .contact p {
@@ -744,7 +743,26 @@ a:active {
   font-style: normal;
   font-weight: 300;
   line-height: 25px;
-  /* 156.25% */
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact h4 {
+    font-size: 42px;
+    line-height: 52px;
+    text-align: left;
+    margin-bottom: 26px;
+  }
+  .contact p {
+    text-align: left;
+  }
 }
 
 .contact .thm-btn {
