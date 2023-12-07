@@ -460,17 +460,17 @@ a:active {
 }
 
 .service-card__img {
-  padding: 65px 167px;
+  padding: 65px 67px;
   display: flex;
   justify-content: center;
   align-items: center;
   /* width: 100%; */
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 .service-card__img img {
-  width: 200px;
+  width: 180px;
 }
 
 @media (min-width: 992px) {
