@@ -905,7 +905,8 @@ a:active {
   transition: all 0.3s;
 }
 
-.footer li:hover a {
+.footer li:hover a,
+.footer li:hover a p {
   color: #d4a61f;
 }
 
@@ -941,6 +942,11 @@ hr {
   .footer .footer-line {
     margin-top: 158px;
   }
+}
+.footer .location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .footer .footer-bottom {
