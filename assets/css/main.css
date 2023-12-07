@@ -428,14 +428,23 @@ a:active {
   align-items: center;
 }
 
+.services .row.tax,
+.services .row.payment {
+  flex-direction: column-reverse;
+}
+
 .services .row.bank,
 .services .row.ai {
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 @media (min-width: 992px) {
   .services .row.bank,
   .services .row.ai {
+    flex-direction: row;
+  }
+  .services .row.tax,
+  .services .row.payment {
     flex-direction: row;
   }
 
