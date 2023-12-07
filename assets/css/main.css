@@ -512,17 +512,17 @@ a:active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 160px 50px;
+  padding: 150px 50px 200px 50px;
   margin-top: -96px;
 }
 
 .vision h4 {
   color: var(--p-5, #152452);
   font-family: Literata;
-  font-size: 26px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  line-height: 56px;
+  line-height: 36px;
   /* 155.556% */
   max-width: 938px;
   margin: 0 auto;
@@ -535,6 +535,7 @@ a:active {
 
   .vision h4 {
     font-size: 36px;
+    line-height: 56px;
   }
 }
 
