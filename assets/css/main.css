@@ -189,8 +189,22 @@ a:active {
 }
 
 .banner .container {
-  padding-top: 180px;
-  padding-bottom: 193.5px;
+  padding-top: 120px;
+  padding-bottom: 170px;
+}
+
+@media (min-width: 992px) {
+  .banner .container {
+    padding-top: 120px;
+    padding-bottom: 170px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner .container {
+    padding-top: 180px;
+    padding-bottom: 193.5px;
+  }
 }
 
 .banner .banner-title {
@@ -216,7 +230,8 @@ a:active {
   font-weight: 300;
   line-height: 30px;
   /* 111.111% */
-  margin-bottom: 186.5px;
+  /* margin-bottom: 186.5px; */
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -229,6 +244,7 @@ a:active {
   .banner .banner-desc {
     font-size: 27px;
     text-align: left;
+    margin-bottom: 186.5px;
   }
 }
 
@@ -254,9 +270,15 @@ a:active {
   margin-bottom: -100px;
   border-radius: 60px;
   background: #fff;
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 60px 0;
   position: relative;
   /* z-index: 9999999999999; */
+}
+@media (min-width: 992px) {
+  .solutions {
+    padding: 120px 0;
+  }
 }
 
 .solutions .title {
@@ -266,12 +288,12 @@ a:active {
   font-size: 30px;
   font-style: normal;
   font-weight: 300;
-  line-height: 60px;
   margin-bottom: 60px;
 }
 
 @media (min-width: 1200px) {
   .solutions .title {
+    line-height: 60px;
     font-size: 40px;
   }
 }
@@ -362,8 +384,15 @@ a:active {
   background: #fff;
   position: relative;
   /* z-index: 99999999; */
-  padding-top: 99px;
-  padding-bottom: 120px;
+  /* padding-top: 99px; */
+  /* padding-bottom: 120px; */
+  padding: 60px 0;
+}
+@media (min-width: 992px) {
+  .services {
+    padding-top: 99px;
+    padding-bottom: 120px;
+  }
 }
 
 .services .container > h4 {
@@ -373,7 +402,7 @@ a:active {
   font-size: 30px;
   font-style: normal;
   font-weight: 300;
-  line-height: 40px;
+  line-height: 30px;
   /* 125% */
   max-width: 829px;
   margin: 0 auto;
@@ -441,7 +470,7 @@ a:active {
 .services .row h4 {
   color: #152452;
   font-family: Literata;
-  font-size: 30px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 300;
   max-width: 500px;
@@ -513,7 +542,7 @@ a:active {
   border-radius: 60px;
   background: #fff;
   margin-top: -150px;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 @media (min-width: 768px) {
